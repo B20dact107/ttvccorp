@@ -28,7 +28,7 @@ public class bai5 {
         for(String word: dict){
             if(s.startsWith(word)){
                List<String> subList=backtrack(s.substring(word.length()), dict, memo);
-               System.err.println(subList);  
+              // System.err.println(subList);  
                for(String sub:subList){
                    reslut.add(word+(sub.isEmpty()?"": " ")+sub);
                }
