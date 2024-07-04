@@ -27,8 +27,6 @@ public class bai5 {
         }
         for(String word: dict){
             if(s.startsWith(word)){
-                 System.err.println(word);            
-                 System.err.println(memo);     
                List<String> subList=backtrack(s.substring(word.length()), dict, memo);
                System.err.println(subList);  
                for(String sub:subList){
@@ -36,7 +34,7 @@ public class bai5 {
                }
             }
         }
-        System.out.println(reslut);
+        
         memo.put(s, reslut);
 
                 
